@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #fdd835, #ff7043);
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      padding: 2rem;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(6px);
+    }
+    .card h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #d84315;
+    }
+    .card p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .card .signature {
+      font-style: italic;
+      color: #555;
+    }
+    .card .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #d84315;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .card .btn:hover {
+      background-color: #bf360c;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Happy Birthday!</h1>
+    <p>Wishing you a day filled with happiness, laughter, and unforgettable moments. May the year ahead be your best one yet!</p>
+    <p class="signature">— Warmest wishes, <script>document.write(new URLSearchParams(window.location.search).get('name'))</script></p>
+    
+    <a href="#" class="btn">Celebrate Now</a>
+  </div>
+</body>
+
+
+</html>
+
